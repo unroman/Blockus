@@ -98,6 +98,11 @@ public class BlockusBlockLootTableProvider extends FabricBlockLootTableProvider 
             this.addDrop(coloredTilesVariants.block);
         }
 
+        for (WoodenPostBundle woodenPost : WoodenPostBundle.values()) {
+            this.addDrop(woodenPost.block);
+            this.addDrop(woodenPost.stripped);
+        }
+
         this.addDrops(CHISELED_MUD_BRICKS,
             MUD_BRICK_PILLAR,
 
